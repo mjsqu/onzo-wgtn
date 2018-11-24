@@ -1,2 +1,2 @@
-# onzo-wgtn
-Onzo bike data wellington
+# mjsqu.github.io
+Hosting data discovery projects

@@ -1,0 +1,2 @@
+#!/bin/bash
+ls /home/mj2_squ/proj/onzo/mjsqu.github.io/data/on* | while read x; do awk '/latitude/ {a+=1} END {print FILENAME,a}' $x; done
