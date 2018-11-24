@@ -1,9 +1,16 @@
-import MySQLdb
+import MySQLdb,os
+
+hdir = "/home/mj2_squ/proj/onzo/onzo-wgtn/bin"
+
+with open(os.path.join(hdir,'../etc/mysql.sec'),'r') as f:
+    pw = f.read()
+
+pw = pw.strip()
 
 def onzo_connect():
     conn = MySQLdb.connect(host= "localhost",
                   user="mj2_squ",
-                  passwd="NEikJemEalmOmD1",
+                  passwd=pw,
                   db="onzo")
     return conn
 
